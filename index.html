@@ -37,17 +37,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://iselect--Summer18.my.salesforce.com',
-			'https://summer18-iselect-community.cs72.force.com',
+			'https://iselect--SPQA.my.salesforce.com',
+			'https://spqa-iselect-community.cs6.force.com/jaypersonalpoc',
 			gslbBaseURL,
-			'00D5D0000000h1F',
-			'iSelect_Chat_Health',
+			'00DN0000000R9EZ',
+			'Health_Chat_Team',
 			{
-				baseLiveAgentContentURL: 'https://c.la1-c1cs-hnd.salesforceliveagent.com/content',
-				deploymentId: '5725D0000004CTW',
-				buttonId: '5735D0000008OZa',
-				baseLiveAgentURL: 'https://d.la1-c1cs-hnd.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'iSelect_Chat_Health',
+				baseLiveAgentContentURL: 'https://c.la1-c1cs-ukb.salesforceliveagent.com/content',
+				deploymentId: '572N000000000oO',
+				buttonId: '573N000000000sz',
+				baseLiveAgentURL: 'https://d.la1-c1cs-ukb.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IN00000004CjuMAE_173702c016a',
 				isOfflineSupportEnabled: true
 			}
 		);
@@ -55,7 +55,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://iselect--Summer18.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://iselect--SPQA.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
